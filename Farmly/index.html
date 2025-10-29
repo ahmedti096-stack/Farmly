@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق طلب الأدوية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.5/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <h1>تطبيق طلب الأدوية</h1>
+    </header>
+    <main class="container">
+        <!-- قسم البحث -->
+        <section class="search-section">
+            <input type="text" id="medicineInput" placeholder="ابحث عن الدواء">
+            <button onclick="searchMedicine()">بحث</button>
+        </section>
+
+        <!-- قائمة الصيدليات -->
+        <section class="list-section">
+            <h2>قائمة الصيدليات</h2>
+            <div id="pharmacyList"></div>
+        </section>
+
+        <!-- الخريطة -->
+        <section class="map-section">
+            <h2>خريطة الصيدليات</h2>
+            <div id="map"></div>
+        </section>
+
+        <!-- سجل الطلبات -->
+        <section class="orders-section">
+            <div id="orderHistory"></div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.5/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* البحث */
+.search-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.search-section input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.search-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.search-section button:hover {
+    background-color: #45a049;
+}
+
+/* قائمة الصيدليات */
+.list-section h2 {
+    margin-bottom: 10px;
+}
+.pharmacy-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pharmacy-item button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.pharmacy-item button:hover {
+    background-color: #e64a19;
+}
+
+/* الخريطة */
+.map-section h2 {
+    margin: 20px 0 10px 0;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #4CAF50;
+}
+
+/* سجل الطلبات */
+.orders-section h3 {
+    margin-top: 20px;
+}
+.orders-section .pharmacy-item {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* متجاوب للجوال */
+@media (max-width: 600px) {
+    .search-section {
+        flex-direction: column;
+    }
+    .pharmacy-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
