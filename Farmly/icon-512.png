@@ -1,12 +1,8 @@
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('service-worker.js')
-    .then(function(registration) {
-      console.log('ServiceWorker تسجيل ناجح مع النطاق:', registration.scope);
-    }, function(err) {
-      console.log('ServiceWorker تسجيل فشل:', err);
-    });
-  });
-}
-</script>
+"icons": [
+  
+  {
+    "src": "icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
